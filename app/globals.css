@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-50: #fdf8f0;
+  --color-coffee-100: #f5e6d0;
+  --color-coffee-200: #e8cba0;
+  --color-coffee-300: #d4a870;
+  --color-coffee-400: #c08a50;
+  --color-coffee-500: #a06a30;
+  --color-coffee-600: #7a4a20;
+  --color-coffee-700: #5a3518;
+  --color-coffee-800: #3e2510;
+  --color-coffee-900: #2a1808;
+
+  --color-cream-50: #fffdf5;
+  --color-cream-100: #fef7e0;
+  --color-cream-200: #fdebb8;
+  --color-cream-300: #fcd980;
+  --color-cream-400: #f5c64a;
+  --color-cream-500: #e0a82a;
+
+  --color-dark-50: #f5f5f5;
+  --color-dark-100: #e0e0e0;
+  --color-dark-200: #b0b0b0;
+  --color-dark-300: #808080;
+  --color-dark-400: #606060;
+  --color-dark-500: #404040;
+  --color-dark-600: #303030;
+  --color-dark-700: #242424;
+  --color-dark-800: #1a1a1a;
+  --color-dark-900: #121212;
+
+  --color-primary: var(--color-coffee-700);
+  --color-primary-light: var(--color-coffee-100);
+  --color-accent: var(--color-cream-300);
+  --color-surface: var(--color-dark-800);
+  --color-surface-elevated: var(--color-dark-700);
+  --color-text-primary: var(--color-dark-50);
+  --color-text-secondary: var(--color-dark-300);
+  --color-border: var(--color-dark-600);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-dark-600) transparent;
+  }
+
+  body {
+    background-color: var(--color-dark-900);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+}
