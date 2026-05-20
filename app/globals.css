@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --font-cursive: var(--font-dancing), "Dancing Script", cursive;
+  --font-heading: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+
   --color-coffee-50: #fdf8f0;
   --color-coffee-100: #f5e6d0;
   --color-coffee-200: #e8cba0;

@@ -1,0 +1,330 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Warkop Titik 3" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e10]: Warkop Titik 3
+        - navigation [ref=e11]:
+          - link "Beranda" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - link "Menu" [ref=e13] [cursor=pointer]:
+            - /url: /menu
+          - link "Tentang" [ref=e14] [cursor=pointer]:
+            - /url: "#tentang"
+          - link "Kolaborasi" [ref=e15] [cursor=pointer]:
+            - /url: "#kolaborasi"
+          - link "Event" [ref=e16] [cursor=pointer]:
+            - /url: "#event"
+        - generic [ref=e17]:
+          - link [ref=e18] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e19]
+          - link "Pesan Sekarang" [ref=e23] [cursor=pointer]:
+            - /url: /menu
+            - button "Pesan Sekarang" [ref=e24]
+    - main [ref=e25]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e38]: Warkop Titik 3
+          - heading "Titik Temu untuk Cerita, Rasa, dan Kebersamaan" [level=1] [ref=e39]:
+            - text: Titik Temu untuk Cerita, Rasa,
+            - text: dan Kebersamaan
+          - paragraph [ref=e40]: Bukan sekadar warkop biasa. Titik 3 adalah ruang hangat untuk bertemu, bercerita, dan menikmati kopi terbaik — tempat di mana setiap momen terasa berarti.
+          - generic [ref=e41]:
+            - link "Lihat Menu" [ref=e42] [cursor=pointer]:
+              - /url: /menu
+              - button "Lihat Menu" [ref=e43]:
+                - generic [ref=e44]:
+                  - text: Lihat Menu
+                  - img [ref=e45]
+            - link "Tentang Kami" [ref=e47] [cursor=pointer]:
+              - /url: /menu
+              - button "Tentang Kami" [ref=e48]
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e52]
+              - generic [ref=e54]: Tempat Nyaman
+            - generic [ref=e55]:
+              - img [ref=e57]
+              - generic [ref=e59]: Pesan Cepat
+            - generic [ref=e60]:
+              - img [ref=e62]
+              - generic [ref=e65]: Rasa Berkualitas
+        - img "Warkop Titik 3 — Suasana hangat dan kopi terbaik" [ref=e71]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: Tentang Titik 3
+          - heading "Lebih dari Sekadar Kopi" [level=2] [ref=e81]
+          - paragraph [ref=e82]: Tiga titik bukan sekadar logo. Ini adalah filosofi tentang apa yang kami percaya.
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - heading "Rasa" [level=3] [ref=e89]
+            - paragraph [ref=e90]: Setiap tegukan adalah perjalanan rasa yang autentik. Dari biji kopi pilihan Nusantara hingga racikan yang penuh hati.
+          - generic [ref=e91]:
+            - heading "Cerita" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Setiap pengunjung membawa cerita. Titik 3 hadir sebagai ruang untuk berbagi tawa, merayakan momen, dan menciptakan kenangan baru.
+          - generic [ref=e98]:
+            - heading "Kebersamaan" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Kopí terasa lebih nikmat ketika dinikmati bersama. Titik 3 adalah tempat bertemu — antara rasa, cerita, dan orang-orang spesial.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - paragraph [ref=e107]: Experience
+          - heading "Pengalaman di Titik 3" [level=2] [ref=e108]
+        - generic [ref=e109]:
+          - generic [ref=e112]:
+            - img [ref=e114]
+            - heading "Ruang Nyaman" [level=3] [ref=e117]
+            - paragraph [ref=e118]: Interior hangat dengan pencahayaan temaram, kursi nyaman, dan musik yang menenangkan.
+          - generic [ref=e121]:
+            - img [ref=e123]
+            - heading "Kopi Berkualitas" [level=3] [ref=e125]
+            - paragraph [ref=e126]: Biji kopi pilihan dari petani lokal, di-roasted segar, dan diseduh oleh barista berpengalaman.
+          - generic [ref=e129]:
+            - img [ref=e131]
+            - heading "Momen Bermakna" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Dari ngopi sendiri, kerja tim, hingga kumpul komunitas — setiap momen terasa spesial.
+          - generic [ref=e137]:
+            - img [ref=e139]
+            - heading "Pelayanan Cepat" [level=3] [ref=e141]
+            - paragraph [ref=e142]: Sistem digital kami memastikan pesananmu diproses cepat dan akurat tanpa antri lama.
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - paragraph [ref=e145]: Signature Menu
+          - heading "Temukan Favorit Barumu" [level=2] [ref=e146]
+          - paragraph [ref=e147]: Racikan spesial yang hanya bisa kamu temukan di Titik 3.
+        - generic [ref=e148]:
+          - generic [ref=e151] [cursor=pointer]:
+            - paragraph [ref=e156]: Kopi Susu Titik
+            - paragraph [ref=e157]: Rp 30.000
+          - generic [ref=e160] [cursor=pointer]:
+            - paragraph [ref=e165]: Titik 3 Special Brew
+            - paragraph [ref=e166]: Rp 45.000
+          - generic [ref=e169] [cursor=pointer]:
+            - paragraph [ref=e174]: Midnight Coffee
+            - paragraph [ref=e175]: Rp 42.000
+          - generic [ref=e178] [cursor=pointer]:
+            - paragraph [ref=e183]: Sunset Latte
+            - paragraph [ref=e184]: Rp 40.000
+          - generic [ref=e187] [cursor=pointer]:
+            - paragraph [ref=e192]: Triple Dot Affogato
+            - paragraph [ref=e193]: Rp 45.000
+          - generic [ref=e196] [cursor=pointer]:
+            - paragraph [ref=e201]: Brown Sugar Signature
+            - paragraph [ref=e202]: Rp 40.000
+        - link "Lihat Semua Menu" [ref=e204] [cursor=pointer]:
+          - /url: /menu
+          - button "Lihat Semua Menu" [ref=e205]:
+            - text: Lihat Semua Menu
+            - img [ref=e206]
+      - generic [ref=e208]:
+        - generic [ref=e209]:
+          - paragraph [ref=e210]: Kolaborasi
+          - heading "Ruang untuk Berkarya Bersama" [level=2] [ref=e211]
+          - paragraph [ref=e212]: Titik 3 adalah ruang terbuka untuk kreator, komunitas, dan brand yang ingin menciptakan sesuatu yang bermakna.
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - img [ref=e216]
+            - paragraph [ref=e220]: Live Acoustic Session
+          - generic [ref=e221]:
+            - img [ref=e223]
+            - paragraph [ref=e228]: Community Gathering
+          - generic [ref=e229]:
+            - img [ref=e231]
+            - paragraph [ref=e233]: Workshop Space
+          - generic [ref=e234]:
+            - img [ref=e236]
+            - paragraph [ref=e241]: Creator Collaboration
+          - generic [ref=e242]:
+            - img [ref=e244]
+            - paragraph [ref=e247]: Open Mic Night
+          - generic [ref=e248]:
+            - img [ref=e250]
+            - paragraph [ref=e253]: Brand Partnership
+        - button "Ajukan Kolaborasi" [ref=e255]
+      - generic [ref=e256]:
+        - generic [ref=e257]:
+          - paragraph [ref=e258]: Events
+          - heading "Ada Apa di Titik 3?" [level=2] [ref=e259]
+          - paragraph [ref=e260]: Dari musik hingga diskusi, selalu ada sesuatu yang terjadi.
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - img [ref=e264]
+            - paragraph [ref=e268]:
+              - img [ref=e269]
+              - text: Setiap Jumat, 19:00
+            - heading "Acoustic Night" [level=3] [ref=e271]
+            - paragraph [ref=e272]: Nikmati penampilan live akustik dari musisi lokal sambil menikmati kopi hangat.
+          - generic [ref=e273]:
+            - img [ref=e275]
+            - paragraph [ref=e278]:
+              - img [ref=e279]
+              - text: Setiap Sabtu, 18:00
+            - heading "Open Mic" [level=3] [ref=e281]
+            - paragraph [ref=e282]: Tunjukkan bakatmu! Puisi, musik, komedi — semua ada tempatnya di Titik 3.
+          - generic [ref=e283]:
+            - img [ref=e285]
+            - paragraph [ref=e290]:
+              - img [ref=e291]
+              - text: Minggu pertama setiap bulan
+            - heading "Creative Meet Up" [level=3] [ref=e293]
+            - paragraph [ref=e294]: Tempat bertemunya para kreator, desainer, dan penulis untuk berbagi ide.
+          - generic [ref=e295]:
+            - img [ref=e297]
+            - paragraph [ref=e303]:
+              - img [ref=e304]
+              - text: Minggu ketiga setiap bulan
+            - heading "Community Gathering" [level=3] [ref=e306]
+            - paragraph [ref=e307]: Acara komunitas bulanan dengan berbagai kegiatan seru dan diskusi santai.
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - paragraph [ref=e310]: Testimonials
+          - heading "Kata Mereka" [level=2] [ref=e311]
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - img [ref=e314]
+            - paragraph [ref=e317]: “Titik 3 bukan sekadar tempat ngopi. Ini ruang di mana rasa dan cerita bertemu. Kopinya luar biasa, suasananya bikin betah berlama-lama.”
+            - generic [ref=e318]:
+              - generic [ref=e319]: ★
+              - generic [ref=e320]: ★
+              - generic [ref=e321]: ★
+              - generic [ref=e322]: ★
+              - generic [ref=e323]: ★
+            - generic [ref=e324]:
+              - paragraph [ref=e325]: Aulia Rahman
+              - paragraph [ref=e326]: Mahasiswa
+          - generic [ref=e327]:
+            - img [ref=e328]
+            - paragraph [ref=e331]: “Pesen online aja udah kaya di cafe beneran. Kemasannya rapi, rasa tetap juara — bikin hari-hari terasa lebih hangat.”
+            - generic [ref=e332]:
+              - generic [ref=e333]: ★
+              - generic [ref=e334]: ★
+              - generic [ref=e335]: ★
+              - generic [ref=e336]: ★
+              - generic [ref=e337]: ★
+            - generic [ref=e338]:
+              - paragraph [ref=e339]: Sari Dewi
+              - paragraph [ref=e340]: Online Customer
+          - generic [ref=e341]:
+            - img [ref=e342]
+            - paragraph [ref=e345]: “Tempat favorit buat nongkrong sama teman-teman. Cappuccino Tiga sama pisang coklatnya juara — rasanya kaya pulang ke rumah.”
+            - generic [ref=e346]:
+              - generic [ref=e347]: ★
+              - generic [ref=e348]: ★
+              - generic [ref=e349]: ★
+              - generic [ref=e350]: ★
+              - generic [ref=e351]: ★
+            - generic [ref=e352]:
+              - paragraph [ref=e353]: Bambang Santoso
+              - paragraph [ref=e354]: Kolega
+          - generic [ref=e355]:
+            - img [ref=e356]
+            - paragraph [ref=e359]: “Pelayanannya cepet banget, cocok buat lunch break. Rice Bowl-nya recommended! Suasana hangatnya bikin betah.”
+            - generic [ref=e360]:
+              - generic [ref=e361]: ★
+              - generic [ref=e362]: ★
+              - generic [ref=e363]: ★
+              - generic [ref=e364]: ★
+            - generic [ref=e365]:
+              - paragraph [ref=e366]: Maya Indah
+              - paragraph [ref=e367]: Karyawan Kantoran
+      - generic [ref=e368]:
+        - generic [ref=e369]:
+          - paragraph [ref=e370]: Smart Ordering
+          - heading "Pesan Digital, Nikmat Tanpa Antri" [level=2] [ref=e371]
+          - paragraph [ref=e372]: Cukup dari smartphone kamu. Scan, pilih, pesan — dan hidangan siap dinikmati.
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - img [ref=e376]
+            - heading "Pilih" [level=3] [ref=e382]
+            - paragraph [ref=e383]: Browse menu digital dan pilih favoritmu.
+          - generic [ref=e384]:
+            - img [ref=e386]
+            - heading "Pesan" [level=3] [ref=e394]
+            - paragraph [ref=e395]: Kustomisasi dan checkout dalam hitungan detik.
+          - generic [ref=e396]:
+            - img [ref=e398]
+            - heading "Nikmati" [level=3] [ref=e406]
+            - paragraph [ref=e407]: Duduk santai, kami yang proses sisanya.
+        - link "Pesan Sekarang" [ref=e409] [cursor=pointer]:
+          - /url: /menu
+          - button "Pesan Sekarang" [ref=e410]:
+            - text: Pesan Sekarang
+            - img [ref=e411]
+      - generic [ref=e416]:
+        - heading "Setiap Cerita Punya Titiknya" [level=2] [ref=e421]:
+          - text: Setiap Cerita Punya
+          - text: Titiknya
+        - paragraph [ref=e422]: Baik untuk ngopi sendiri, kerja, atau kumpul bareng teman — Titik 3 selalu jadi tempat yang tepat.
+        - generic [ref=e423]:
+          - link "Pesan Sekarang" [ref=e424] [cursor=pointer]:
+            - /url: /menu
+            - button "Pesan Sekarang" [ref=e425]:
+              - text: Pesan Sekarang
+              - img [ref=e426]
+          - button "Kolaborasi Bersama" [ref=e428]
+      - generic [ref=e430]:
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - link "Warkop Titik 3" [ref=e433] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e438]: Warkop Titik 3
+            - paragraph [ref=e439]: Ruang untuk rasa, cerita, dan pertemuan yang bermakna. Tiga titik, satu cerita.
+            - generic [ref=e440]:
+              - link [ref=e441] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e442]
+              - link [ref=e445] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e446]
+              - link [ref=e449] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e450]
+          - generic [ref=e452]:
+            - heading "Links" [level=4] [ref=e453]
+            - list [ref=e454]:
+              - listitem [ref=e455]:
+                - link "Beranda" [ref=e456] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e457]:
+                - link "Tentang" [ref=e458] [cursor=pointer]:
+                  - /url: "#tentang"
+              - listitem [ref=e459]:
+                - link "Menu" [ref=e460] [cursor=pointer]:
+                  - /url: /menu
+              - listitem [ref=e461]:
+                - link "Kolaborasi" [ref=e462] [cursor=pointer]:
+                  - /url: "#kolaborasi"
+              - listitem [ref=e463]:
+                - link "Event" [ref=e464] [cursor=pointer]:
+                  - /url: "#event"
+          - generic [ref=e465]:
+            - heading "Contact" [level=4] [ref=e466]
+            - list [ref=e467]:
+              - listitem [ref=e468]:
+                - img [ref=e469]
+                - text: Jl. Kopi Nikmat No. 123
+              - listitem [ref=e472]:
+                - img [ref=e473]
+                - text: hello@warkoptitik3.com
+              - listitem [ref=e476]:
+                - img [ref=e477]
+                - text: +62 812 3456 7890
+          - generic [ref=e479]:
+            - heading "Operating Hours" [level=4] [ref=e480]
+            - generic [ref=e482]:
+              - img [ref=e483]
+              - generic [ref=e486]:
+                - paragraph [ref=e487]: "Sen — Jum: 08:00 — 22:00"
+                - paragraph [ref=e488]: "Sab — Min: 09:00 — 23:00"
+            - generic [ref=e489]:
+              - paragraph [ref=e490]: Kolaborasi
+              - link "collab@warkoptitik3.com" [ref=e491] [cursor=pointer]:
+                - /url: mailto:collab@warkoptitik3.com
+        - generic [ref=e492]:
+          - paragraph [ref=e493]: © 2026 Warkop Titik 3. Tiga Titik, Satu Cerita.
+          - paragraph [ref=e494]:
+            - text: Made with
+            - generic [ref=e495]: ● ● ●
+  - button "Open Next.js Dev Tools" [ref=e501] [cursor=pointer]:
+    - img [ref=e502]

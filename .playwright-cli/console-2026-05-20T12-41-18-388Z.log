@@ -1,0 +1,39 @@
+[     849ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[    1033ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[    1270ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[  166868ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  167102ms] [LOG] [Fast Refresh] done in 230ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  172328ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  172559ms] [LOG] [Fast Refresh] done in 228ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  181049ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  181099ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  190032ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  190162ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  194958ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  195094ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  203063ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  203121ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  212951ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  213034ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  220090ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  220206ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  226262ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  226313ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  234755ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  234892ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  241415ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  241497ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  247041ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  247128ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  254811ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  254915ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  259625ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  259716ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  268469ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  268548ms] [LOG] [Fast Refresh] done in 143ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  275529ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  275665ms] [LOG] [Fast Refresh] done in 181ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  325068ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  325088ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  325518ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
+[  325604ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/053w_next_dist_0-trv5t._.js:2477
