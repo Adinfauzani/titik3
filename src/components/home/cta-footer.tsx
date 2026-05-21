@@ -1,32 +1,19 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/shared/button"
 import { Section } from "@/components/shared/section"
 
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-}
-
 export function CTAFooter() {
   return (
     <Section className="py-14 sm:py-24 md:py-32">
-      <motion.div
-        initial="visible"
-        variants={fadeUp}
-        className="relative overflow-hidden rounded-2xl border border-dark-600/40 bg-gradient-to-b from-dark-800 to-dark-900 p-8 text-center sm:p-16"
-      >
+      <div className="relative overflow-hidden rounded-2xl border border-dark-600/40 bg-gradient-to-b from-dark-800 to-dark-900 p-6 text-center sm:p-16">
         <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-coffee-600/5 blur-[120px]" />
 
         <div className="relative">
           <div className="mb-6 flex justify-center gap-3">
             {[0, 1, 2].map((i) => (
-              <motion.span
+              <span
                 key={i}
-                initial={{ opacity: 1, scale: 1 }}
                 className="inline-block h-4 w-4 rounded-full bg-coffee-400 shadow-lg shadow-coffee-500/20"
               />
             ))}
@@ -56,7 +43,7 @@ export function CTAFooter() {
             </Button>
           </div>
         </div>
-      </motion.div>
+      </div>
     </Section>
   )
 }

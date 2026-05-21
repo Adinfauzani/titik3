@@ -1,6 +1,3 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import { Sofa, Heart, Music, Users, BookOpen, Wifi, Sun } from "lucide-react"
 import { Section } from "@/components/shared/section"
 
@@ -13,16 +10,6 @@ const experiences = [
   { icon: Wifi, title: "Free WiFi", desc: "Koneksi internet cepat untuk bekerja, belajar, atau sekadar berselancar.", span: 1 },
   { icon: Sun, title: "Teras Outdoor", desc: "Nikmati kopi di area terbuka dengan suasana segar dan pemandangan asri.", span: 2 },
 ]
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: { transition: { staggerChildren: 0.06 } },
-}
-
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-}
 
 export function ExperienceShowcase() {
   return (
@@ -39,19 +26,12 @@ export function ExperienceShowcase() {
         </p>
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="visible"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="grid grid-cols-3 gap-3 md:gap-4 lg:gap-5"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-5">
         {experiences.map((e) => (
-          <motion.div
+          <div
             key={e.title}
-            variants={cardVariants}
-            className={`group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-4 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-6 ${
-              e.span === 3 ? "col-span-3 md:col-span-3" : e.span === 2 ? "col-span-2" : "col-span-1"
+            className={`group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-3 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-6 ${
+              e.span === 3 ? "sm:col-span-3" : e.span === 2 ? "sm:col-span-2" : ""
             }`}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-coffee-800/10 via-coffee-900/5 to-dark-900 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -65,9 +45,9 @@ export function ExperienceShowcase() {
               </p>
             </div>
             <div className="absolute inset-0 rounded-2xl ring-1 ring-white/[0.03]" />
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </Section>
   )
 }

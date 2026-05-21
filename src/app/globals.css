@@ -33,7 +33,7 @@
   --color-dark-800: #1a1a1a;
   --color-dark-900: #121212;
 
-  --color-primary: var(--color-coffee-700);
+  --color-primary: var(--color-coffee-600);
   --color-primary-light: var(--color-coffee-100);
   --color-accent: var(--color-cream-300);
   --color-surface: var(--color-dark-800);
@@ -41,15 +41,74 @@
   --color-text-primary: var(--color-dark-50);
   --color-text-secondary: var(--color-dark-300);
   --color-border: var(--color-dark-600);
+  --color-muted: var(--color-dark-500);
+  --color-ring: var(--color-coffee-400);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
+  --color-sidebar: var(--color-dark-800);
+  --color-sidebar-foreground: var(--color-dark-50);
+  --color-sidebar-primary: var(--color-coffee-600);
+  --color-sidebar-primary-foreground: var(--color-dark-50);
+  --color-sidebar-accent: var(--color-dark-700);
+  --color-sidebar-accent-foreground: var(--color-dark-50);
+  --color-sidebar-border: var(--color-dark-600);
+  --color-sidebar-ring: var(--color-coffee-400);
+
   --animate-float: float 4s ease-in-out infinite;
+}
+
+@layer base {
+  :root {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.685 0.169 91.4);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.577 0.245 27.3);
+    --destructive-foreground: oklch(0.577 0.245 27.3);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: var(--color-coffee-400);
+    --radius: 0.75rem;
+    --sidebar-background: var(--color-dark-800);
+    --sidebar-foreground: var(--color-dark-50);
+    --sidebar-primary: var(--color-coffee-600);
+    --sidebar-primary-foreground: var(--color-dark-50);
+    --sidebar-accent: var(--color-dark-700);
+    --sidebar-accent-foreground: var(--color-dark-50);
+    --sidebar-border: var(--color-dark-600);
+    --sidebar-ring: var(--color-coffee-400);
+  }
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-296px * 17 - 64px)); }
+}
+
+@keyframes marquee-desktop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-312px * 17 - 80px)); }
 }
 
 @layer base {

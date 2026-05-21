@@ -1,6 +1,3 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import Link from "next/link"
 import { ArrowRight, Smartphone, ClipboardCheck, CupSoda } from "lucide-react"
 import { Button } from "@/components/shared/button"
@@ -11,16 +8,6 @@ const steps = [
   { icon: ClipboardCheck, title: "Pesan", description: "Kustomisasi dan checkout dalam hitungan detik." },
   { icon: CupSoda, title: "Nikmati", description: "Duduk santai, kami yang proses sisanya." },
 ]
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: { transition: { staggerChildren: 0.2 } },
-}
-
-const stepVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-}
 
 export function DigitalOrdering() {
   return (
@@ -37,21 +24,14 @@ export function DigitalOrdering() {
         </p>
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="visible"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="mx-auto mt-8 flex max-w-3xl flex-col items-center justify-center gap-6 sm:mt-14 sm:flex-row sm:gap-8"
-      >
+      <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center justify-center gap-6 sm:mt-14 sm:flex-row sm:gap-8">
         {steps.map((step, i) => (
-          <motion.div
+          <div
             key={step.title}
-            variants={stepVariants}
             className="flex flex-col items-center text-center"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-coffee-600/10 text-coffee-400">
-              <step.icon className="h-7 w-7" />
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-coffee-600/10 text-coffee-400 sm:h-16 sm:w-16">
+              <step.icon className="h-6 w-6 sm:h-7 sm:w-7" />
             </div>
             <div className="mt-3 flex gap-1.5">
               {[0, 1, 2].map((d) => (
@@ -65,21 +45,18 @@ export function DigitalOrdering() {
             </div>
             <h3 className="mt-3 text-base font-semibold text-text-primary">{step.title}</h3>
             <p className="mt-1 text-xs text-text-secondary">{step.description}</p>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 1, y: 0 }}
-        className="mt-10 text-center"
-      >
+      <div className="mt-10 text-center">
         <Link href="/menu">
           <Button className="group">
             Pesan Sekarang
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Button>
         </Link>
-      </motion.div>
+      </div>
     </Section>
   )
 }

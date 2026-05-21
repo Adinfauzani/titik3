@@ -72,8 +72,8 @@ export const menuItems: MenuItem[] = [
 export const testimonials = [
   { name: "Aulia Rahman", rating: 5, text: "Titik 3 bukan sekadar tempat nongkrong. Ini rumah kedua. Kopi Susunya juara, Indomie Titik 3-nya gak ada lawan.", role: "Mahasiswa" },
   { name: "Sari Dewi", rating: 5, text: "Pesen Indomie Goreng sama Es Kopi Susu tiap ke sini. Udah kaya ritual. Tempatnya hangat, murah, bikin betah.", role: "Pelanggan Setia" },
-  { name: "Bambang Santoso", rating: 5, text: "Tempat favorit buat ngumpul sama teman-teman. Cireng Samara sama Pisang Titik 3 juara banget! Harganya ramah di kantong.", role: "Kolega" },
-  { name: "Maya Indah", rating: 4, text: "Seblak Titik 3-nya recommended banget! Pedasnya pas, topping-nya banyak. Cocok buat lunch break.", role: "Karyawan Kantoran" },
+  { name: "Bambang Santoso", rating: 3, text: "Tempat favorit buat ngumpul sama teman-teman. Cireng Samara sama Pisang Titik 3 juara banget! Harganya ramah di kantong.", role: "Kolega" },
+  { name: "Maya Indah", rating: 2, text: "Seblaknya lumayan, tapi porsi kecil buat harga segitu. Semoga next-nya bisa lebih worth it.", role: "Karyawan Kantoran" },
   { name: "Rizki Pratama", rating: 5, text: "Udah berkali-kali delivery dan selalu puas. Kopi Susunya sampai dengan suhu pas. Mienya tetap enak walaupun diantar.", role: "Online Customer" },
   { name: "Dina Safitri", rating: 5, text: "Estetik banget buat foto-foto. Tapi yang bikin balik lagi itu rasanya, bukan hanya tampilannya. Es Campur Titik 3 recommended!", role: "Content Creator" },
   { name: "Hendra Wijaya", rating: 4, text: "Wifi kenceng, colokan banyak, Kopi Hitam cuma 10rb. Surga buat para remote worker kayak saya.", role: "Freelancer" },

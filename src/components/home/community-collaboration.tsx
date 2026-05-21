@@ -1,6 +1,3 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import { Users, Pen, Handshake, Building, Camera, Mic, Palette } from "lucide-react"
 import { Button } from "@/components/shared/button"
 import { Section } from "@/components/shared/section"
@@ -14,16 +11,6 @@ const opportunities = [
   { icon: Mic, title: "Open Collaboration", desc: "Punya ide baru? Kami selalu siap menyambut dengan tangan terbuka.", span: 1 },
   { icon: Palette, title: "Komunitas Seni", desc: "Wadah bagi seniman lokal untuk pameran, diskusi, dan kolaborasi karya.", span: 2 },
 ]
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: { transition: { staggerChildren: 0.06 } },
-}
-
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-}
 
 export function CommunityCollaboration() {
   return (
@@ -40,19 +27,12 @@ export function CommunityCollaboration() {
         </p>
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="visible"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="grid grid-cols-3 gap-3 md:gap-4 lg:gap-5"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-5">
         {opportunities.map((o) => (
-          <motion.div
+          <div
             key={o.title}
-            variants={cardVariants}
-            className={`group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-4 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-5 ${
-              o.span === 3 ? "col-span-3 md:col-span-3" : o.span === 2 ? "col-span-2" : "col-span-1"
+            className={`group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-3 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-5 ${
+              o.span === 3 ? "sm:col-span-3" : o.span === 2 ? "sm:col-span-2" : ""
             }`}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-coffee-800/10 via-coffee-900/5 to-dark-900 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -66,15 +46,15 @@ export function CommunityCollaboration() {
               </p>
             </div>
             <div className="absolute inset-0 rounded-2xl ring-1 ring-white/[0.03]" />
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
 
-      <motion.div className="mt-8 text-center sm:mt-10">
+      <div className="mt-8 text-center sm:mt-10">
         <Button variant="primary">
           Ajukan Kolaborasi
         </Button>
-      </motion.div>
+      </div>
     </Section>
   )
 }

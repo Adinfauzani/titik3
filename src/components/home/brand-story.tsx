@@ -1,6 +1,3 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import { Section } from "@/components/shared/section"
 
 const pillars = [
@@ -21,58 +18,32 @@ const pillars = [
   },
 ]
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: { transition: { staggerChildren: 0.15 } },
-}
-
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-}
-
 export function BrandStory() {
   return (
-    <Section className="py-14 sm:py-24 md:py-32" id="tentang">
-      <div className="mb-10 text-center sm:mb-14">
-        <motion.p
-          initial={{ opacity: 1, y: 0 }}
-          className="text-sm font-medium uppercase tracking-[0.25em] text-coffee-400"
-        >
+    <Section className="py-10 sm:py-24 md:py-32" id="tentang">
+      <div className="mb-8 text-center sm:mb-14">
+        <p className="text-xs font-medium uppercase tracking-[0.25em] text-coffee-400 sm:text-sm">
           Tentang Titik 3
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 1, y: 0 }}
-          className="          mt-2 font-cursive text-3xl sm:text-5xl"
-        >
+        </p>
+        <h2 className="mt-2 font-cursive text-2xl sm:text-5xl">
           Lebih dari Sekadar Kopi
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 1, y: 0 }}
-          className="mx-auto mt-4 max-w-xl text-text-secondary"
-        >
+        </h2>
+        <p className="mx-auto mt-3 max-w-xl text-xs text-text-secondary sm:text-sm sm:mt-4">
           Tiga titik bukan sekadar logo. Ini adalah filosofi tentang apa yang kami percaya.
-        </motion.p>
+        </p>
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="visible"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 gap-5 md:grid-cols-3"
-      >
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-5">
         {pillars.map((p) => (
-          <motion.div
+          <div
             key={p.title}
-            variants={cardVariants}
-            className="group rounded-2xl border border-dark-600/30 bg-dark-800/30 p-5 text-center transition-all duration-500 hover:-translate-y-0.5 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-8"
+            className="group rounded-2xl border border-dark-600/30 bg-dark-800/30 p-4 text-center transition-all duration-500 hover:-translate-y-0.5 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-8"
           >
-            <div className="mb-4 flex justify-center gap-3 sm:mb-5">
+            <div className="mb-3 flex justify-center gap-2 sm:mb-5 sm:gap-3">
               {[0, 1, 2].map((d) => (
                 <span
                   key={d}
-                  className={`inline-block h-2.5 w-2.5 rounded-full transition-all duration-500 ${
+                  className={`inline-block rounded-full transition-all duration-500 size-2 sm:size-2.5 ${
                     d === p.dot
                       ? "bg-coffee-400 shadow-lg shadow-coffee-500/20"
                       : "bg-dark-600"
@@ -80,11 +51,11 @@ export function BrandStory() {
                 />
               ))}
             </div>
-            <h3 className="mb-1.5 text-base font-bold text-text-primary sm:text-xl">{p.title}</h3>
-            <p className="text-[13px] leading-relaxed text-text-secondary sm:text-sm">{p.description}</p>
-          </motion.div>
+            <h3 className="mb-1 text-sm font-bold text-text-primary sm:text-xl">{p.title}</h3>
+            <p className="text-xs leading-relaxed text-text-secondary sm:text-sm">{p.description}</p>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </Section>
   )
 }

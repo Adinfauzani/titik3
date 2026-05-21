@@ -3,6 +3,7 @@ import { Inter, Dancing_Script, Plus_Jakarta_Sans } from "next/font/google"
 import { ClerkProvider } from "@clerk/nextjs"
 import "./globals.css"
 import { TRPCProvider } from "@/lib/trpc-provider"
+import { ThemeProvider } from "@/components/themes/theme-provider"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const dancingScript = Dancing_Script({
@@ -34,9 +35,12 @@ export default function RootLayout({
       <html
         lang="id"
         className={`${inter.variable} ${dancingScript.variable} ${plusJakarta.variable}`}
+        suppressHydrationWarning
       >
         <body className="font-sans antialiased">
-          <TRPCProvider>{children}</TRPCProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+            <TRPCProvider>{children}</TRPCProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

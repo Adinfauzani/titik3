@@ -1,7 +1,8 @@
 "use client"
 
-import { use } from "react"
+import { use, useEffect } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { ArrowLeft, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/shared/button"
 import { Card } from "@/components/shared/card"
@@ -26,13 +27,26 @@ const statusBadgeVariant: Record<
   COMPLETED: "completed",
 }
 
+const REDIRECT_DELAY = 5000
+
 export default function OrderTrackingPage({
   params,
 }: {
   params: Promise<{ id: string }>
 }) {
   const { id } = use(params)
-  const { data: order, isLoading } = api.order.getById.useQuery({ id })
+  const router = useRouter()
+  const { data: order, isLoading } = api.order.getById.useQuery(
+    { id },
+    { refetchInterval: 3000 }
+  )
+
+  useEffect(() => {
+    if (order?.status === "READY" || order?.status === "COMPLETED") {
+      const timer = setTimeout(() => router.push("/"), REDIRECT_DELAY)
+      return () => clearTimeout(timer)
+    }
+  }, [order?.status, router])
 
   if (isLoading) {
     return (
@@ -122,6 +136,11 @@ export default function OrderTrackingPage({
             {formatDate(order.createdAt)}
           </span>
         </div>
+        {(order.status === "READY" || order.status === "COMPLETED") && (
+          <div className="rounded-b-2xl bg-green-500/10 px-4 py-3 text-center text-sm text-green-400">
+            Pesanan kamu sudah siap! Mengarahkan ke halaman utama...
+          </div>
+        )}
       </Card>
 
       <Card>

@@ -2,14 +2,15 @@ import { auth } from "@clerk/nextjs/server"
 import { prisma } from "@/lib/db"
 import { redirect } from "next/navigation"
 import Link from "next/link"
-
-const sidebarLinks = [
-  { href: "/admin", label: "Overview", icon: "□" },
-  { href: "/admin/orders", label: "Orders", icon: "○" },
-  { href: "/admin/menu", label: "Menu", icon: "◇" },
-  { href: "/admin/categories", label: "Categories", icon: "△" },
-  { href: "/admin/sales", label: "Sales", icon: "○" },
-]
+import { Bell, UserCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { AppSidebar } from "@/components/admin/app-sidebar"
+import { UserNav } from "@/components/admin/user-nav"
+import { DynamicBreadcrumbs } from "@/components/layout/breadcrumbs"
+import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { Separator } from "@/components/ui/separator"
+import { KBar } from "@/components/kbar"
+import { SearchButton } from "@/components/admin/search-button"
 
 export default async function AdminLayout({
   children,
@@ -23,29 +24,34 @@ export default async function AdminLayout({
   if (user?.role !== "ADMIN") redirect("/")
 
   return (
-    <div className="flex min-h-screen">
-      <aside className="flex w-64 flex-col border-r border-dark-600/50 bg-dark-800 p-4">
-        <Link
-          href="/admin"
-          className="mb-8 flex items-center gap-2 text-xl font-semibold"
-        >
-          <span className="text-2xl text-coffee-400">●</span>
-          Admin
-        </Link>
-        <nav className="flex flex-col gap-1">
-          {sidebarLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-text-secondary transition-colors hover:bg-dark-700 hover:text-text-primary"
-            >
-              <span>{link.icon}</span>
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-      </aside>
-      <main className="flex-1 overflow-y-auto p-6">{children}</main>
-    </div>
+    <SidebarProvider defaultOpen={true}>
+      <KBar />
+      <AppSidebar />
+      <SidebarInset>
+        <header className="bg-background/60 sticky top-0 z-20 flex h-14 shrink-0 items-center justify-between gap-2 backdrop-blur-md">
+          <div className="flex items-center gap-2 px-4">
+            <SidebarTrigger className="-ml-1" />
+            <Separator orientation="vertical" className="mr-2 h-4" />
+            <DynamicBreadcrumbs />
+          </div>
+          <div className="flex items-center gap-1 px-4">
+            <SearchButton />
+            <Button variant="ghost" size="icon" className="size-8" asChild>
+              <Link href="/admin/notifications">
+                <Bell className="h-4 w-4" />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" className="size-8" asChild>
+              <Link href="/admin/profile">
+                <UserCircle className="h-4 w-4" />
+              </Link>
+            </Button>
+            <Separator orientation="vertical" className="mx-1 h-4" />
+            <UserNav />
+          </div>
+        </header>
+        <main className="flex-1 p-6">{children}</main>
+      </SidebarInset>
+    </SidebarProvider>
   )
 }

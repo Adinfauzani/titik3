@@ -1,6 +1,3 @@
-"use client"
-
-import { motion, type Variants } from "framer-motion"
 import { Coffee, Users, Handshake, Sparkles, Mic, Palette } from "lucide-react"
 import { Section } from "@/components/shared/section"
 
@@ -12,15 +9,6 @@ const events = [
   { icon: Mic, title: "Open Mic", desc: "Tunjukkan bakatmu di panggung terbuka — puisi, musik, komedi, semua bisa." },
   { icon: Palette, title: "Acara Kreatif", desc: "Workshop dan gathering inspiratif untuk mengasah kreativitas tanpa batas." },
 ]
-
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 16 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, delay: i * 0.08, ease: "easeOut" },
-  }),
-}
 
 export function EventHighlights() {
   return (
@@ -38,10 +26,8 @@ export function EventHighlights() {
           </p>
           <div className="mt-8 hidden lg:flex lg:gap-1.5">
             {[0, 1, 2].map((i) => (
-              <motion.span
+              <span
                 key={i}
-                animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.4, ease: "easeInOut" }}
                 className="inline-block h-2 w-2 rounded-full bg-coffee-400"
               />
             ))}
@@ -50,14 +36,9 @@ export function EventHighlights() {
 
         <div className="flex flex-col gap-4 lg:col-span-3">
           {events.map((ev, i) => (
-            <motion.div
+            <div
               key={ev.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-40px" }}
-              variants={cardVariants}
-              className="group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-5 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-6"
+              className="group relative overflow-hidden rounded-2xl border border-dark-600/30 bg-dark-800/30 p-3 transition-all duration-500 hover:-translate-y-1 hover:border-coffee-500/20 hover:shadow-xl hover:shadow-coffee-600/5 sm:p-6"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-coffee-800/10 via-coffee-900/5 to-dark-900 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="relative flex items-start gap-4">
@@ -70,7 +51,7 @@ export function EventHighlights() {
                 </div>
               </div>
               <div className="absolute inset-0 rounded-2xl ring-1 ring-white/[0.03]" />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
